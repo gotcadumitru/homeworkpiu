@@ -11,5 +11,6 @@ namespace NivelAccesDate
         Firma GetFirmaByID(int _id);
         
         void UpdateFirma(Firma f);
+        
     }
 }

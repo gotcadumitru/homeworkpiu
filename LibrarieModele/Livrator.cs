@@ -27,6 +27,12 @@ namespace LibrarieModele
             Nume = _nume;
             Prenume = _prenume;
         }
+        public Livrator(string _nume, string _prenume, Vehicol _v)
+        {
+            Nume = _nume;
+            Prenume = _prenume;
+            Transport = _v;
+        }
         public string ToStringPentruAfisare()
         {
             return $"{Nume} {Prenume} are vehicolul: {Transport.VehicName}";

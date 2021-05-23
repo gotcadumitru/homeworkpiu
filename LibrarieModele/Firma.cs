@@ -14,7 +14,6 @@ namespace LibrarieModele
         public string NumeFirma { get; set; }
         public int IdFirma { get; set; }
         public List<Livrator> Livratori = new List<Livrator>();
-        public static int IdUltimFirma { get; set; } = 0;
         public float RaitingFirma { get; set; }
         
         public string LogoUrl { get; set; }
@@ -25,8 +24,7 @@ namespace LibrarieModele
         public Firma(string _numeFirma,string _logo)
         {
             NumeFirma = _numeFirma;
-            IdUltimFirma++;
-            IdFirma = IdUltimFirma;
+
             LogoUrl = _logo;
             RaitingFirma = 0;
         }
@@ -34,8 +32,6 @@ namespace LibrarieModele
         public Firma(string _numeFirma,string _logo, float _raiting)
         {
             NumeFirma = _numeFirma;
-            IdUltimFirma++;
-            IdFirma = IdUltimFirma;
             LogoUrl = _logo;
             RaitingFirma = _raiting;
         }
@@ -59,7 +55,6 @@ namespace LibrarieModele
                 }
                 
             }
-            IdUltimFirma=IdFirma;
         }
         
         

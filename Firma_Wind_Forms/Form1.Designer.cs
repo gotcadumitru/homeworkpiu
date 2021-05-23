@@ -36,8 +36,6 @@
             this.rdbMotocicleta = new System.Windows.Forms.RadioButton();
             this.rdbAutomobil = new System.Windows.Forms.RadioButton();
             this.rdbTrotineta = new System.Windows.Forms.RadioButton();
-            this.lblMesaj = new System.Windows.Forms.Label();
-            this.rtbAfisare = new System.Windows.Forms.RichTextBox();
             this.txtNumeFirma = new System.Windows.Forms.TextBox();
             this.btnAdaugaFirma = new System.Windows.Forms.Button();
             this.lblLogo = new System.Windows.Forms.Label();
@@ -54,6 +52,9 @@
             this.timer1 = new System.Timers.Timer();
             this.txtFirmaError = new System.Windows.Forms.Label();
             this.btnAfisareFirme = new System.Windows.Forms.Button();
+            this.lstFirme = new System.Windows.Forms.ListBox();
+            this.btnUpdateFirma = new System.Windows.Forms.Button();
+            this.txtErorareLivrator = new System.Windows.Forms.Label();
             this.gpbProgrameStudiu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.timer1)).BeginInit();
             this.SuspendLayout();
@@ -138,24 +139,7 @@
             this.rdbTrotineta.Text = "Trotineta";
             this.rdbTrotineta.UseVisualStyleBackColor = true;
             // 
-            // lblMesaj
-            // 
-            this.lblMesaj.AutoSize = true;
-            this.lblMesaj.Location = new System.Drawing.Point(102, 347);
-            this.lblMesaj.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblMesaj.Name = "lblMesaj";
-            this.lblMesaj.Size = new System.Drawing.Size(0, 13);
-            this.lblMesaj.TabIndex = 37;
-            // 
-            // rtbAfisare
-            // 
-            this.rtbAfisare.Location = new System.Drawing.Point(358, 30);
-            this.rtbAfisare.Margin = new System.Windows.Forms.Padding(2);
-            this.rtbAfisare.Name = "rtbAfisare";
-            this.rtbAfisare.Size = new System.Drawing.Size(310, 286);
-            this.rtbAfisare.TabIndex = 35;
-            this.rtbAfisare.Text = "Lista firme";
-            // 
+    
             // txtNumeFirma
             // 
             this.txtNumeFirma.Location = new System.Drawing.Point(110, 30);
@@ -166,7 +150,7 @@
             // 
             // btnAdaugaFirma
             // 
-            this.btnAdaugaFirma.Location = new System.Drawing.Point(115, 157);
+            this.btnAdaugaFirma.Location = new System.Drawing.Point(17, 157);
             this.btnAdaugaFirma.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdaugaFirma.Name = "btnAdaugaFirma";
             this.btnAdaugaFirma.Size = new System.Drawing.Size(93, 23);
@@ -269,13 +253,14 @@
             // 
             // btnAdaugaLivrator
             // 
-            this.btnAdaugaLivrator.Location = new System.Drawing.Point(215, 356);
+            this.btnAdaugaLivrator.Location = new System.Drawing.Point(215, 390);
             this.btnAdaugaLivrator.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdaugaLivrator.Name = "btnAdaugaLivrator";
             this.btnAdaugaLivrator.Size = new System.Drawing.Size(93, 23);
             this.btnAdaugaLivrator.TabIndex = 52;
             this.btnAdaugaLivrator.Text = "Adauga Livrator";
             this.btnAdaugaLivrator.UseVisualStyleBackColor = true;
+            this.btnAdaugaLivrator.Click += new System.EventHandler(this.btnAdaugaLivrator_Click);
             // 
             // timer1
             // 
@@ -302,12 +287,45 @@
             this.btnAfisareFirme.UseVisualStyleBackColor = true;
             this.btnAfisareFirme.Click += new System.EventHandler(this.btnAfisareFirme_Click);
             // 
+            // lstFirme
+            // 
+            this.lstFirme.FormattingEnabled = true;
+            this.lstFirme.Location = new System.Drawing.Point(336, 30);
+            this.lstFirme.Name = "lstFirme";
+            this.lstFirme.Size = new System.Drawing.Size(341, 316);
+            this.lstFirme.TabIndex = 55;
+            this.lstFirme.SelectedIndexChanged += new System.EventHandler(this.lstFirme_SelectedIndexChanged);
+            // 
+            // btnUpdateFirma
+            // 
+            this.btnUpdateFirma.Location = new System.Drawing.Point(114, 157);
+            this.btnUpdateFirma.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdateFirma.Name = "btnUpdateFirma";
+            this.btnUpdateFirma.Size = new System.Drawing.Size(93, 23);
+            this.btnUpdateFirma.TabIndex = 56;
+            this.btnUpdateFirma.Text = "Update Firma";
+            this.btnUpdateFirma.UseVisualStyleBackColor = true;
+            this.btnUpdateFirma.Click += new System.EventHandler(this.btnUpdateFirma_Click);
+            // 
+            // txtErorareLivrator
+            // 
+            this.txtErorareLivrator.ForeColor = System.Drawing.Color.Red;
+            this.txtErorareLivrator.Location = new System.Drawing.Point(7, 360);
+            this.txtErorareLivrator.Name = "txtErorareLivrator";
+            this.txtErorareLivrator.Size = new System.Drawing.Size(323, 28);
+            this.txtErorareLivrator.TabIndex = 57;
+            this.txtErorareLivrator.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtErorareLivrator.Click += new System.EventHandler(this.txtErorareLivrator_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(730, 488);
+            this.Controls.Add(this.txtErorareLivrator);
+            this.Controls.Add(this.btnUpdateFirma);
+            this.Controls.Add(this.lstFirme);
             this.Controls.Add(this.btnAfisareFirme);
             this.Controls.Add(this.txtFirmaError);
             this.Controls.Add(this.btnAdaugaLivrator);
@@ -321,8 +339,6 @@
             this.Controls.Add(this.lblNumeFirma);
             this.Controls.Add(this.txtLogoUrl);
             this.Controls.Add(this.gpbProgrameStudiu);
-            this.Controls.Add(this.lblMesaj);
-            this.Controls.Add(this.rtbAfisare);
             this.Controls.Add(this.txtNumeFirma);
             this.Controls.Add(this.btnAdaugaFirma);
             this.Controls.Add(this.lblLogo);
@@ -334,6 +350,14 @@
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Label txtErorareLivrator;
+
+        private System.Windows.Forms.Button btnUpdateFirma;
+
+        private System.Windows.Forms.ListBox lstFirme;
+
+        private System.Windows.Forms.ListBox listBox1;
 
         private System.Windows.Forms.Button btnAfisareFirme;
 
@@ -381,13 +405,6 @@
         private System.Windows.Forms.Label label3;
 
         private System.Windows.Forms.GroupBox gpbProgrameStudiu;
-        private System.Windows.Forms.RadioButton rdbElectronica;
-        private System.Windows.Forms.RadioButton rdbElectrotehnica;
-        private System.Windows.Forms.RadioButton rdbCalculatoare;
-        private System.Windows.Forms.RadioButton rdbAutomatica;
-        private System.Windows.Forms.Label lblSpecializare;
-        private System.Windows.Forms.Label lblMesaj;
-        private System.Windows.Forms.RichTextBox rtbAfisare;
         private System.Windows.Forms.TextBox txtNumeFirma;
         private System.Windows.Forms.Button btnAdauga;
         private System.Windows.Forms.Label lblNote;

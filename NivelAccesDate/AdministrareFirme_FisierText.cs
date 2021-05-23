@@ -7,6 +7,8 @@ namespace NivelAccesDate
 {
     public class AdministrareFirme_FisierText : IStocareData
     {
+        private const int ID_PRIMUL_STUDENT = 1;
+        private const int INCREMENT = 1;
         string NumeFisier { get; set; }
 
         public AdministrareFirme_FisierText(string numeFisier)
@@ -18,6 +20,7 @@ namespace NivelAccesDate
         }
         public void AddFirma(Firma f)
         {
+            f.IdFirma = GetId();
             try
             {
 
@@ -38,19 +41,17 @@ namespace NivelAccesDate
 
         public List<Firma> GetFirme()
         {
-            List < Firma > firme = new List<Firma>();
+            var firme = new List<Firma>();
             
             try
             {
-                // instructiunea 'using' va apela sr.Close()
-                using (StreamReader sr = new StreamReader(NumeFisier))
+                using (var sr = new StreamReader(NumeFisier))
                 {
                     string line;
                         
-                    //citeste cate o linie si creaza un obiect de tip Student pe baza datelor din linia citita
                     while ((line = sr.ReadLine()) != null)
                     {
-                        Firma firmaDinFisier = new Firma(line);
+                        var firmaDinFisier = new Firma(line);
                         firme.Add(firmaDinFisier);
                     }
                 }
@@ -68,11 +69,11 @@ namespace NivelAccesDate
         } 
         public Firma GetFirmaByID(int _id)
         {
-            List<Firma> firme = GetFirme();
+            var firme = GetFirme();
 
-            Firma findFirma = new Firma();
+            var findFirma = new Firma();
             
-            foreach (Firma f in firme)
+            foreach (var f in firme)
             {
                 if (f.IdFirma == _id)
                 {
@@ -85,23 +86,23 @@ namespace NivelAccesDate
 
         public void UpdateFirma(Firma f)
         {
-            List<Firma> firme = GetFirme();
+            var firme = GetFirme();
             try
             {
-                using (StreamWriter swFisierText = new StreamWriter(NumeFisier,false))
+                using (var swFisierText = new StreamWriter(NumeFisier, false))
                 {
-                    foreach (Firma firma in firme)
+                    foreach (var firma in firme)
                     {
                         if (f.IdFirma == firma.IdFirma)
                         {
-                            swFisierText.WriteLine(f.ConversieLaSirPentruScriereInFisier()); 
+                            swFisierText.WriteLine(f.ConversieLaSirPentruScriereInFisier());
                         }
                         else
                         {
                             swFisierText.WriteLine(firma.ConversieLaSirPentruScriereInFisier());
                         }
                     }
-                    
+
                 }
             }
             catch (IOException eIO)
@@ -112,8 +113,40 @@ namespace NivelAccesDate
             {
                 throw new Exception("Eroare generica. Mesaj: " + eGen.Message);
             }
-
-            
         }
-    }
+
+        private int GetId()
+            {
+                int IdFirma = ID_PRIMUL_STUDENT;
+                try
+                {
+                    // instructiunea 'using' va apela sr.Close()
+                    using (StreamReader sr = new StreamReader(NumeFisier))
+                    {
+                        string LinieDinFisier;
+                        Firma ultimaFirmaDinFisier = null;
+
+                        //citeste cate o linie si creaza un obiect de tip Student pe baza datelor din linia citita
+                        while ((LinieDinFisier = sr.ReadLine()) != null)
+                        {
+                            ultimaFirmaDinFisier = new Firma(LinieDinFisier);
+                        }
+
+                        if (ultimaFirmaDinFisier != null)
+                        {
+                            IdFirma = ultimaFirmaDinFisier.IdFirma + INCREMENT;
+                        }
+                    }
+                }
+                catch (IOException eIO)
+                {
+                    throw new Exception("Eroare la deschiderea fisierului. Mesaj: " + eIO.Message);
+                }
+                catch (Exception eGen)
+                {
+                    throw new Exception("Eroare generica. Mesaj: " + eGen.Message);
+                }
+                return IdFirma;
+            }
+        }
 }

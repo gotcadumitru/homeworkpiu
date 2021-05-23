@@ -1,4 +1,4 @@
-1;dwadaw;33;awdawd;
-1;firma 2;666;https:..//;
-1;ddd;343;aaa;
-1;dd;33,22;aa;
+1;firmax;4,3;logo;
+2;firmay;8,71;logo2;dawdawd^awadwad^2$dwad^awdwa^1$
+3;dd;0;aa;dddddd^aaaaa^4$dima^gotca^5$
+4;aa;4;aa;
