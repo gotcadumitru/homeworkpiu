@@ -1,0 +1,4 @@
+1;dwadaw;33;awdawd;
+1;firma 2;666;https:..//;
+1;ddd;343;aaa;
+1;dd;33,22;aa;

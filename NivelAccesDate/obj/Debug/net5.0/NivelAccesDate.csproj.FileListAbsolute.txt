@@ -1,0 +1,15 @@
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\NivelAccesDate\bin\Debug\net5.0\NivelAccesDate.deps.json
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\NivelAccesDate\bin\Debug\net5.0\NivelAccesDate.dll
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\NivelAccesDate\bin\Debug\net5.0\ref\NivelAccesDate.dll
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\NivelAccesDate\bin\Debug\net5.0\NivelAccesDate.pdb
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\NivelAccesDate\bin\Debug\net5.0\LibrarieModele.dll
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\NivelAccesDate\bin\Debug\net5.0\LibrarieModele.pdb
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\NivelAccesDate\obj\Debug\net5.0\NivelAccesDate.csprojAssemblyReference.cache
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\NivelAccesDate\obj\Debug\net5.0\NivelAccesDate.GeneratedMSBuildEditorConfig.editorconfig
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\NivelAccesDate\obj\Debug\net5.0\NivelAccesDate.AssemblyInfoInputs.cache
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\NivelAccesDate\obj\Debug\net5.0\NivelAccesDate.AssemblyInfo.cs
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\NivelAccesDate\obj\Debug\net5.0\NivelAccesDate.csproj.CoreCompileInputs.cache
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\NivelAccesDate\obj\Debug\net5.0\NivelAccesDate.csproj.CopyComplete
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\NivelAccesDate\obj\Debug\net5.0\NivelAccesDate.dll
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\NivelAccesDate\obj\Debug\net5.0\ref\NivelAccesDate.dll
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\NivelAccesDate\obj\Debug\net5.0\NivelAccesDate.pdb

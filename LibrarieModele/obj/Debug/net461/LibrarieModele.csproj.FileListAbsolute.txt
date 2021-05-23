@@ -1,0 +1,8 @@
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\LibrarieModele\bin\Debug\net461\LibrarieModele.dll
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\LibrarieModele\bin\Debug\net461\LibrarieModele.pdb
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\LibrarieModele\obj\Debug\net461\LibrarieModele.csprojAssemblyReference.cache
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\LibrarieModele\obj\Debug\net461\LibrarieModele.AssemblyInfoInputs.cache
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\LibrarieModele\obj\Debug\net461\LibrarieModele.AssemblyInfo.cs
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\LibrarieModele\obj\Debug\net461\LibrarieModele.csproj.CoreCompileInputs.cache
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\LibrarieModele\obj\Debug\net461\LibrarieModele.dll
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\LibrarieModele\obj\Debug\net461\LibrarieModele.pdb

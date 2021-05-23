@@ -1,0 +1,15 @@
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\Firma_Wind_Forms\bin\Debug\Firma_Wind_Forms.exe.config
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\Firma_Wind_Forms\bin\Debug\Firma_Wind_Forms.exe
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\Firma_Wind_Forms\bin\Debug\Firma_Wind_Forms.pdb
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\Firma_Wind_Forms\obj\Debug\Firma_Wind_Forms.csprojAssemblyReference.cache
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\Firma_Wind_Forms\obj\Debug\Firma_Wind_Forms.Properties.Resources.resources
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\Firma_Wind_Forms\obj\Debug\Firma_Wind_Forms.csproj.GenerateResource.cache
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\Firma_Wind_Forms\obj\Debug\Firma_Wind_Forms.csproj.CoreCompileInputs.cache
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\Firma_Wind_Forms\obj\Debug\Firma_Wind_Forms.exe
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\Firma_Wind_Forms\obj\Debug\Firma_Wind_Forms.pdb
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\Firma_Wind_Forms\bin\Debug\LibrarieModele.dll
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\Firma_Wind_Forms\bin\Debug\NivelAccesDate.dll
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\Firma_Wind_Forms\bin\Debug\LibrarieModele.pdb
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\Firma_Wind_Forms\bin\Debug\NivelAccesDate.pdb
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\Firma_Wind_Forms\obj\Debug\Firma_Wind_Forms.csproj.CopyComplete
+D:\univer\Anul 2\PIU\TA\Firma_Wind_Forms\Firma_Wind_Forms\obj\Debug\Firma_Wind_Forms.Form1.resources
